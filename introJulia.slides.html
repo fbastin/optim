@@ -13205,7 +13205,7 @@ a.anchor-link {
 <center>
     <h1>Introduction à Julia</h1>
 
-<img src="img/logo.svg" style="height:200px">
+<img src="logo.svg" style="height:200px">
 
 <br/>
 Fabian Bastin (fabian.bastin@umontreal.ca), 2017-2020
@@ -13420,7 +13420,7 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre></pre>
+<pre><span class="ansi-cyan-intense-fg ansi-bold">Fetching:</span> [========================================&gt;]  100.0 %</pre>
 </div>
 </div>
 
@@ -13502,8 +13502,7 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">   Updating</span> registry at `C:\Users\bastin\.julia\registries\General`
-</pre>
+<pre><span class="ansi-green-intense-fg ansi-bold">   Updating</span></pre>
 </div>
 </div>
 
@@ -13523,7 +13522,8 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">   Updating</span> git-repo `https://github.com/JuliaRegistries/General.git`
+<pre> registry at `C:\Users\bastin\.julia\registries\General`
+<span class="ansi-green-intense-fg ansi-bold">   Updating</span> git-repo `https://github.com/JuliaRegistries/General.git`
 </pre>
 </div>
 </div>
@@ -13565,8 +13565,23 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">No Changes</span> to `C:\Users\bastin\.julia\environments\v1.5\Project.toml`
-<span class="ansi-green-intense-fg ansi-bold">No Changes</span> to `C:\Users\bastin\.julia\environments\v1.5\Manifest.toml`
+<pre><span class="ansi-green-intense-fg ansi-bold">  Installed</span> Requires ─────── v1.0.2
+<span class="ansi-green-intense-fg ansi-bold">  Installed</span> PlotUtils ────── v1.0.6
+<span class="ansi-green-intense-fg ansi-bold">  Installed</span> Compat ───────── v3.15.0
+<span class="ansi-green-intense-fg ansi-bold">  Installed</span> Missings ─────── v0.4.4
+<span class="ansi-green-intense-fg ansi-bold">  Installed</span> StatsBase ────── v0.33.1
+<span class="ansi-green-intense-fg ansi-bold">  Installed</span> JuMP ─────────── v0.21.3
+<span class="ansi-green-intense-fg ansi-bold">  Installed</span> DataStructures ─ v0.17.20
+<span class="ansi-green-intense-fg ansi-bold">Updating</span> `C:\Users\bastin\.julia\environments\v1.5\Project.toml`
+ <span class="ansi-black-intense-fg"> [4076af6c] </span><span class="ansi-yellow-intense-fg">↑ JuMP v0.20.0 ⇒ v0.21.3</span>
+<span class="ansi-green-intense-fg ansi-bold">Updating</span> `C:\Users\bastin\.julia\environments\v1.5\Manifest.toml`
+ <span class="ansi-black-intense-fg"> [34da2185] </span><span class="ansi-yellow-intense-fg">↑ Compat v3.14.0 ⇒ v3.15.0</span>
+ <span class="ansi-black-intense-fg"> [864edb3b] </span><span class="ansi-magenta-intense-fg">↓ DataStructures v0.18.1 ⇒ v0.17.20</span>
+ <span class="ansi-black-intense-fg"> [4076af6c] </span><span class="ansi-yellow-intense-fg">↑ JuMP v0.20.0 ⇒ v0.21.3</span>
+ <span class="ansi-black-intense-fg"> [e1d29d7a] </span><span class="ansi-yellow-intense-fg">↑ Missings v0.4.3 ⇒ v0.4.4</span>
+ <span class="ansi-black-intense-fg"> [995b91a9] </span><span class="ansi-yellow-intense-fg">↑ PlotUtils v1.0.5 ⇒ v1.0.6</span>
+ <span class="ansi-black-intense-fg"> [ae029012] </span><span class="ansi-yellow-intense-fg">↑ Requires v1.0.1 ⇒ v1.0.2</span>
+ <span class="ansi-black-intense-fg"> [2913bbd2] </span><span class="ansi-yellow-intense-fg">↑ StatsBase v0.32.0 ⇒ v0.33.1</span>
 </pre>
 </div>
 </div>
@@ -14062,6 +14077,83 @@ Stacktrace:
 </div>
 </div>
 
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Jupyter (et Julia) supporte le code $\LaTeX$ et même les émoticônes! Pour le code $\LaTeX$, il suffit d'écrire la commande $\LaTeX$ puis d'appuyer sur tabulation. Les émoticônes s'obtiennent en écrivant en entourant le nom de l'émoticône de <code>\:</code> et <code>:</code>, par exemple <code>\:alien:</code>, suivi de tabulation. Si le nom n'est pas connu en entier, après <code>\:</code> et les premières lettres de l'émoticône entrée, l'appui sur tabulation permet d'afficher une liste déroulante où vous pouvez choisir l'émoticône voulue.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">α</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">👽</span> <span class="o">=</span> <span class="s">&quot;alien&quot;</span>
+<span class="n">println</span><span class="p">(</span><span class="n">α</span><span class="o">+</span><span class="n">length</span><span class="p">(</span><span class="n">👽</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>6.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">🐱</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">🐶</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0</span>
+<span class="n">💥</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">🐱</span><span class="o">+</span><span class="n">🐶</span><span class="o">==</span><span class="n">💥</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[13]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>true</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -14080,7 +14172,7 @@ Stacktrace:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">println</span><span class="p">(</span><span class="n">supertype</span><span class="p">(</span><span class="kt">Int64</span><span class="p">),</span> <span class="s">&quot; &quot;</span><span class="p">,</span> <span class="n">supertype</span><span class="p">(</span><span class="kt">Float64</span><span class="p">))</span>
@@ -14119,7 +14211,7 @@ Stacktrace:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">subtypes</span><span class="p">(</span><span class="kt">Any</span><span class="p">)</span>
@@ -14135,7 +14227,7 @@ Stacktrace:
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -14186,7 +14278,7 @@ Stacktrace:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># Tiré de https://en.wikibooks.org/wiki/Introducing_Julia/Types</span>
@@ -14242,6 +14334,97 @@ Stacktrace:
 		Rational
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Tableaux">Tableaux<a class="anchor-link" href="#Tableaux">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Les variables peuvent être groupés en tableaux, à une ou plusieurs dimensions. Il est à noter que les indices commencent à 1 en Julia.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[17]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>10-element Array{Int64,1}:
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[18]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1</pre>
+</div>
+
 </div>
 
 </div>
