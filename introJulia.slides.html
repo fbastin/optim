@@ -13221,7 +13221,7 @@ Fabian Bastin (fabian.bastin@umontreal.ca), 2017-2020
 <li>Conçu pour répondre au problème de double langage (un pour le développement rapide, un pour la production), en alliant efficacité avec simplicité de code.</li>
 <li>Concerne avant tout le calcul scientifique.</li>
 <li>JIT (just-in-time): le code Julia est compilé au moment de son exécution, un peu à l'image de Java.</li>
-<li>Version actuelle: 1.5.0.</li>
+<li>Version actuelle: 1.5.2.</li>
 <li>Croissance exponentielle des librairies disponibles.</li>
 <li>Peut s'interfacer avec des langages tels que Python, C++, Fortran,...</li>
 </ul>
@@ -13280,31 +13280,13 @@ Fabian Bastin (fabian.bastin@umontreal.ca), 2017-2020
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello World!
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13362,7 +13344,7 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="k">import</span> <span class="n">Pkg</span>
@@ -13383,75 +13365,13 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">&quot;Plots&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">   Updating</span> </pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre></pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>registry at `C:\Users\bastin\.julia\registries\General`
-<span class="ansi-green-intense-fg ansi-bold">   Updating</span> git-repo `https://github.com/JuliaRegistries/General.git`
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-cyan-intense-fg ansi-bold">Fetching:</span> [========================================&gt;]  100.0 %</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">  Resolving</span> package versions...
-<span class="ansi-green-intense-fg ansi-bold">No Changes</span> to `C:\Users\bastin\.julia\environments\v1.5\Project.toml`
-<span class="ansi-green-intense-fg ansi-bold">No Changes</span> to `C:\Users\bastin\.julia\environments\v1.5\Manifest.toml`
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13497,110 +13417,13 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">Pkg</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">   Updating</span></pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre></pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre> registry at `C:\Users\bastin\.julia\registries\General`
-<span class="ansi-green-intense-fg ansi-bold">   Updating</span> git-repo `https://github.com/JuliaRegistries/General.git`
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre></pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">   Updating</span> git-repo `https://github.com/fbastin/GERALDINE.jl`
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre></pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">  Installed</span> Requires ─────── v1.0.2
-<span class="ansi-green-intense-fg ansi-bold">  Installed</span> PlotUtils ────── v1.0.6
-<span class="ansi-green-intense-fg ansi-bold">  Installed</span> Compat ───────── v3.15.0
-<span class="ansi-green-intense-fg ansi-bold">  Installed</span> Missings ─────── v0.4.4
-<span class="ansi-green-intense-fg ansi-bold">  Installed</span> StatsBase ────── v0.33.1
-<span class="ansi-green-intense-fg ansi-bold">  Installed</span> JuMP ─────────── v0.21.3
-<span class="ansi-green-intense-fg ansi-bold">  Installed</span> DataStructures ─ v0.17.20
-<span class="ansi-green-intense-fg ansi-bold">Updating</span> `C:\Users\bastin\.julia\environments\v1.5\Project.toml`
- <span class="ansi-black-intense-fg"> [4076af6c] </span><span class="ansi-yellow-intense-fg">↑ JuMP v0.20.0 ⇒ v0.21.3</span>
-<span class="ansi-green-intense-fg ansi-bold">Updating</span> `C:\Users\bastin\.julia\environments\v1.5\Manifest.toml`
- <span class="ansi-black-intense-fg"> [34da2185] </span><span class="ansi-yellow-intense-fg">↑ Compat v3.14.0 ⇒ v3.15.0</span>
- <span class="ansi-black-intense-fg"> [864edb3b] </span><span class="ansi-magenta-intense-fg">↓ DataStructures v0.18.1 ⇒ v0.17.20</span>
- <span class="ansi-black-intense-fg"> [4076af6c] </span><span class="ansi-yellow-intense-fg">↑ JuMP v0.20.0 ⇒ v0.21.3</span>
- <span class="ansi-black-intense-fg"> [e1d29d7a] </span><span class="ansi-yellow-intense-fg">↑ Missings v0.4.3 ⇒ v0.4.4</span>
- <span class="ansi-black-intense-fg"> [995b91a9] </span><span class="ansi-yellow-intense-fg">↑ PlotUtils v1.0.5 ⇒ v1.0.6</span>
- <span class="ansi-black-intense-fg"> [ae029012] </span><span class="ansi-yellow-intense-fg">↑ Requires v1.0.1 ⇒ v1.0.2</span>
- <span class="ansi-black-intense-fg"> [2913bbd2] </span><span class="ansi-yellow-intense-fg">↑ StatsBase v0.32.0 ⇒ v0.33.1</span>
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13615,64 +13438,13 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s">&quot;https://github.com/fbastin/GERALDINE.jl&quot;</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s">&quot;https://github.com/fbastin/Jasmine&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre></pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">   Updating</span> git-repo `https://github.com/fbastin/GERALDINE.jl`
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre></pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">  Resolving</span> package versions...
-<span class="ansi-green-intense-fg ansi-bold">No Changes</span> to `C:\Users\bastin\.julia\environments\v1.5\Project.toml`
-<span class="ansi-green-intense-fg ansi-bold">No Changes</span> to `C:\Users\bastin\.julia\environments\v1.5\Manifest.toml`
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13681,7 +13453,28 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Bloc-notes">Bloc-notes<a class="anchor-link" href="#Bloc-notes">&#182;</a></h2><p>Julia s'intègre aussi à l'environnement de bloc-notes, permettant de mélanger texte et code, tout en offrant un environnement interactif. Un fichier de bloc-notes se reconnaît à l'extension de fichier <code>ipynb</code>.</p>
-<p>Les démonstrations du cours seront disponibles principalement du forme de bloc-notes.</p>
+<p>Pour utiliser Julia avec les bloc-notes, il est nécessaire d'ajouter la librairie IJulia.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">&quot;IJulia&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pour lire, écrire et modifier des bloc-notes, il est possible d'utiliser <code>Jupyter</code> ou <code>Nteract</code>. Le premier s'exécute à l'intérieur du navigateur internet tandis que le second est une application indépendante.</p>
 
 </div>
 </div>
@@ -13696,54 +13489,13 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Le bloc-note Jupyter (<a href="http://www.jupyter.org">http://www.jupyter.org</a>) est une application web permettant de créer des documents combinant texte, codes, équations, et graphiques. Il est également possible d'exporter le code source ainsi que de créer des documents pdf et même des présentations interactives.</p>
+<p>L'environnement Jupyter (<a href="http://www.jupyter.org">http://www.jupyter.org</a>) est une application web permettant de créer des documents combinant texte, codes, équations, et graphiques. Il est également possible d'exporter le code source ainsi que de créer des documents pdf et même des présentations interactives.</p>
 <p>Le nom vient d'une origine double. Il évoque la planète Jupiter ainsi que les languages majeurs supportés par Jupyter: Julia, Python et R. Sa documentation peut être consultée à l'adresse <a href="https://jupyter.org/documentation">https://jupyter.org/documentation</a>.</p>
 <p>L'installation directe de Jupyter est dépendante de l'OS, mais peut être également réalisée à travers la suite Anaconda, téléchargeable à l'adresse: <a href="https://anaconda.com">https://anaconda.com</a>, laquelle offre un environnement intégré pour Python.</p>
 
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Pour utiliser Julia avec Jupyter, il est nécessaire d'ajouter la librairie IJulia.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">&quot;IJulia&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">  Resolving</span> package versions...
-<span class="ansi-green-intense-fg ansi-bold">No Changes</span> to `C:\Users\bastin\.julia\environments\v1.5\Project.toml`
-<span class="ansi-green-intense-fg ansi-bold">No Changes</span> to `C:\Users\bastin\.julia\environments\v1.5\Manifest.toml`
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13754,7 +13506,7 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">IJulia</span>
@@ -13762,31 +13514,6 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-IJulia is already running
-
-Stacktrace:
- [1] error(::String) at .\error.jl:33
- [2] notebook(; dir::String, detached::Bool) at C:\Users\bastin\.julia\packages\IJulia\tOM8L\src\jupyter.jl:95
- [3] notebook() at C:\Users\bastin\.julia\packages\IJulia\tOM8L\src\jupyter.jl:95
- [4] top-level scope at In[7]:2
- [5] include_string(::Function, ::Module, ::String, ::String) at .\loading.jl:1091</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13817,7 +13544,8 @@ Stacktrace:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Une alternative à Jupyter est Nteract, disponible à l'adresse <a href="https://nteract.io/">https://nteract.io/</a></p>
+<p>Une alternative à Jupyter est <code>Nteract</code>, disponible à l'adresse <a href="https://nteract.io/">https://nteract.io/</a></p>
+<p><code>Nteract</code> étant une interface, le support des bloc-notes doit être installé au sein du langage de programmation utilisé.</p>
 
 </div>
 </div>
@@ -13946,33 +13674,13 @@ Stacktrace:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">the_answer_to_life_the_universe_and_everything</span> <span class="o">=</span> <span class="mi">42</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[8]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>42</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13995,33 +13703,13 @@ Stacktrace:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">typeof</span><span class="p">(</span><span class="n">the_answer_to_life_the_universe_and_everything</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[9]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>Int64</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -14036,7 +13724,7 @@ Stacktrace:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">life</span> <span class="o">=</span> <span class="n">convert</span><span class="p">(</span><span class="kt">Float64</span><span class="p">,</span><span class="n">the_answer_to_life_the_universe_and_everything</span><span class="p">)</span>
@@ -14046,56 +13734,16 @@ Stacktrace:
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[10]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>42.0</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">typeof</span><span class="p">(</span><span class="n">life</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[11]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>Float64</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -14110,7 +13758,7 @@ Stacktrace:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">α</span> <span class="o">=</span> <span class="mf">1.0</span>
@@ -14122,28 +13770,10 @@ Stacktrace:
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>6.0
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">🐱</span> <span class="o">=</span> <span class="mf">1.0</span>
@@ -14153,26 +13783,6 @@ Stacktrace:
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[13]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>true</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -14194,31 +13804,13 @@ Stacktrace:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">println</span><span class="p">(</span><span class="n">supertype</span><span class="p">(</span><span class="kt">Int64</span><span class="p">),</span> <span class="s">&quot; &quot;</span><span class="p">,</span> <span class="n">supertype</span><span class="p">(</span><span class="kt">Float64</span><span class="p">))</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Signed AbstractFloat
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -14233,59 +13825,13 @@ Stacktrace:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">subtypes</span><span class="p">(</span><span class="kt">Any</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[15]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>450-element Array{Any,1}:
- AbstractArray
- AbstractChannel
- AbstractChar
- AbstractDict
- AbstractDisplay
- AbstractSet
- AbstractString
- Any
- Base.AbstractBroadcasted
- Base.AbstractCartesianIndex
- Base.AbstractCmd
- Base.AbstractLock
- Base.ArithmeticStyle
- ⋮
- Tuple
- Type
- TypeVar
- UndefInitializer
- Val
- Vararg
- VecElement
- VersionNumber
- WeakRef
- ZMQ.Context
- ZMQ.Socket
- ZMQ._Message</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -14300,7 +13846,7 @@ Stacktrace:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># Tiré de https://en.wikibooks.org/wiki/Introducing_Julia/Types</span>
@@ -14315,49 +13861,6 @@ Stacktrace:
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Number
-	Complex
-	Real
-		AbstractFloat
-			BigFloat
-			Float16
-			Float32
-			Float64
-		AbstractIrrational
-			Irrational
-		Integer
-			Bool
-			Signed
-				BigInt
-				Int128
-				Int16
-				Int32
-				Int64
-				Int8
-			Unsigned
-				UInt128
-				UInt16
-				UInt32
-				UInt64
-				UInt8
-		Rational
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -14379,7 +13882,7 @@ Stacktrace:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">:</span><span class="mi">10</span><span class="p">]</span>
@@ -14389,66 +13892,16 @@ Stacktrace:
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[17]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>10-element Array{Int64,1}:
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[18]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>1</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
