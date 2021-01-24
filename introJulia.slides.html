@@ -13221,7 +13221,7 @@ Fabian Bastin (fabian.bastin@umontreal.ca), 2017-2020
 <li>Conçu pour répondre au problème de double langage (un pour le développement rapide, un pour la production), en alliant efficacité avec simplicité de code.</li>
 <li>Concerne avant tout le calcul scientifique.</li>
 <li>JIT (just-in-time): le code Julia est compilé au moment de son exécution, un peu à l'image de Java.</li>
-<li>Version actuelle: 1.5.2.</li>
+<li>Version actuelle: 1.5.3.</li>
 <li>Croissance exponentielle des librairies disponibles.</li>
 <li>Peut s'interfacer avec des langages tels que Python, C++, Fortran,...</li>
 </ul>
@@ -13544,11 +13544,35 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Une alternative à Jupyter est <code>Nteract</code>, disponible à l'adresse <a href="https://nteract.io/">https://nteract.io/</a></p>
+<p>Une alternative à Jupyter est <code>Nteract</code>, disponible à l'adresse <a href="https://nteract.io/">https://nteract.io/</a> Son avantage est de fonctionner en dehors du navigateur internet. Par contre, son support de formattage de texte est moins avancé.</p>
 <p><code>Nteract</code> étant une interface, le support des bloc-notes doit être installé au sein du langage de programmation utilisé.</p>
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Comme indiqué à la page <a href="https://nteract.io/kernels/julia">https://nteract.io/kernels/julia</a>, il est nécessaire d'installer le noyau Julia pour pouvoir exécuter du code.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># From a Julia prompt</span>
+<span class="k">using</span> <span class="n">Pkg</span>
+<span class="n">Pkg</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="s">&quot;IJulia&quot;</span><span class="p">)</span>
+<span class="n">IJulia</span><span class="o">.</span><span class="n">installkernel</span><span class="p">(</span><span class="s">&quot;Julia nteract&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
