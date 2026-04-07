@@ -54,8 +54,8 @@ function updateRadius!(state::BTRState, b::BasicTrustRegion)
     end
 end
 
-function btr(f::Function, g!::Function, H!::Function, Step::Function,
-    x0::Vector, state:: BTRState = BTRState(), ApproxH::Bool = false, verbose::Bool = false)
+function btr(f::Function, g!::Function, H!::Function, Step::Function, x0::Vector;
+        state:: BTRState = BTRState(), ApproxH::Bool = false, verbose::Bool = false)
     
     b = BTRDefaults()
     state.iter = 0
