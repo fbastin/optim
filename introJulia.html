@@ -13113,7 +13113,7 @@ Fabian Bastin (fabian.bastin@umontreal.ca), 2017-2026
 <li>Conçu pour répondre au problème de double langage (un pour le développement rapide, un pour la production), en alliant efficacité avec simplicité de code.</li>
 <li>Concerne avant tout le calcul scientifique.</li>
 <li>JIT (just-in-time): le code Julia est compilé au moment de son exécution, un peu à l'image de Java.</li>
-<li>Version actuelle: 1.12.24</li>
+<li>Version actuelle: 1.12.x</li>
 <li>Croissance exponentielle des librairies disponibles.</li>
 <li>Peut s'interfacer avec des langages tels que Python, C++, Fortran, R,...</li>
 <li>Versions commerciales pour l'infonuagique: JuliaHub</li>
@@ -13216,12 +13216,11 @@ Fabian Bastin (fabian.bastin@umontreal.ca), 2017-2026
 <div  class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Environnements-de-d%C3%A9veloppement">Environnements de d&#233;veloppement<a class="anchor-link" href="#Environnements-de-d%C3%A9veloppement">&#182;</a></h2><p>Plusieurs environnements de développement sont disponibles, en particulier</p>
+<h2 id="Environnements-de-d%C3%A9veloppement">Environnements de d&#233;veloppement<a class="anchor-link" href="#Environnements-de-d%C3%A9veloppement">&#182;</a></h2><p>L'environnement de développement le plus utilisé et recommandé est <strong>Visual Studio Code</strong> avec l'extension Julia :</p>
 <ul>
-<li>Juno: <a href="https://junolab.org">https://junolab.org</a></li>
-<li>Atom: <a href="https://ide.atom.io/">https://ide.atom.io/</a></li>
-<li>Visual Studio: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
+<li>Visual Studio Code: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
 </ul>
+<p><em>(Note : Les anciens environnements Juno et Atom ne sont plus maintenus et ont été remplacés par VS Code).</em></p>
 
 </div>
 </div>
@@ -13258,7 +13257,8 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 <div  class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Nous pouvons à présent ajouter une librairie avec la commande <code>Pkg.add("Nom de la librairies")</code>. Par exemple, pour pouvoir réaliser des graphes des fonctions qui nous intéressent, nous utiliserons la librairie Plots. Pour l'ajouter, entrons</p>
+<p>Nous pouvons à présent ajouter une librairie avec la commande <code>Pkg.add("Nom de la librairie")</code>. Par exemple, pour pouvoir réaliser des graphes des fonctions qui nous intéressent, nous utiliserons la librairie Plots. Pour l'ajouter, entrons</p>
+<p><strong>Astuce :</strong> En pratique, les développeurs Julia utilisent très souvent le <strong>mode Pkg du REPL</strong>. Dans le terminal Julia, appuyez sur la touche <code>]</code> pour y accéder (l'invite devient <code>pkg&gt;</code>), puis tapez simplement <code>add Plots</code>.</p>
 
 </div>
 </div>
@@ -13341,7 +13341,7 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s">"https://github.com/JLChartrand/RDST.jl"</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s">"https://github.com/JLChartrand/RandomDataStreams.jl"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13353,7 +13353,8 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Bloc-notes">Bloc-notes<a class="anchor-link" href="#Bloc-notes">&#182;</a></h2><p>Julia s'intègre aussi à l'environnement de bloc-notes, permettant de mélanger texte et code, tout en offrant un environnement interactif. Un fichier de bloc-notes se reconnaît à l'extension de fichier <code>ipynb</code>.</p>
-<p>Pour utiliser Julia avec les bloc-notes, il est nécessaire d'ajouter la librairie IJulia.</p>
+<p>Outre Jupyter, <strong>Pluto.jl</strong> (<a href="https://plutojl.org/">https://plutojl.org/</a>) est un environnement de notebook réactif très populaire et natif à Julia, particulièrement apprécié pour l'enseignement et le prototypage.</p>
+<p>Pour utiliser Julia avec les bloc-notes Jupyter classiques, il est nécessaire d'ajouter la librairie IJulia.</p>
 
 </div>
 </div>
@@ -13722,7 +13723,7 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">life</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">convert</span><span class="p">(</span><span class="kt">Float64</span><span class="p">,</span><span class="n">the_answer_to_life_the_universe_and_everything</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">life</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">Float64</span><span class="p">(</span><span class="n">the_answer_to_life_the_universe_and_everything</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13933,6 +13934,49 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div  class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Structures-de-contr%C3%B4le">Structures de contr&#244;le<a class="anchor-link" href="#Structures-de-contr%C3%B4le">&#182;</a></h2><p>Comme la plupart des langages, Julia propose des structures conditionnelles et des boucles. Notez l'utilisation du mot-clé <code>end</code> pour fermer les blocs, et l'absence de deux-points <code>:</code> ou d'accolades <code>{}</code>.</p>
+
+</div>
+</div>
+</div>
+<div  class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span>
+<span class="k">if</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">"Négatif"</span><span class="p">)</span>
+<span class="k">elseif</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">"Zéro"</span><span class="p">)</span>
+<span class="k">else</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">"Positif"</span><span class="p">)</span>
+<span class="k">end</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div  class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">1</span><span class="o">:</span><span class="mi">3</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">"Itération "</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">)</span>
+<span class="k">end</span>
 </pre></div>
 
     </div>
@@ -14169,6 +14213,115 @@ Il existe plusieurs méthodes pour utiliser le gestionnaire de librairies. Nous 
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">f2</span><span class="p">(</span><span class="s">"tou"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div  class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Dispatch-Multiple">Dispatch Multiple<a class="anchor-link" href="#Dispatch-Multiple">&#182;</a></h3><p>Le véritable cœur de Julia est le <strong>dispatch multiple</strong>. Au lieu d'avoir une seule fonction abstraite qui gère tous les cas avec des <code>if</code>, vous pouvez définir <em>plusieurs méthodes</em> pour une même fonction, spécialisées par type. Julia choisira automatiquement la méthode la plus optimisée lors de l'exécution.</p>
+
+</div>
+</div>
+</div>
+<div  class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">saluer</span><span class="p">(</span><span class="n">x</span><span class="o">::</span><span class="kt">Int</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">println</span><span class="p">(</span><span class="s">"C'est un entier : "</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">)</span>
+<span class="n">saluer</span><span class="p">(</span><span class="n">x</span><span class="o">::</span><span class="kt">String</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">println</span><span class="p">(</span><span class="s">"C'est du texte : "</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div  class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">saluer</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div  class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">saluer</span><span class="p">(</span><span class="s">"Bonjour"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div  class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Broadcasting-(Vectorisation)">Broadcasting (Vectorisation)<a class="anchor-link" href="#Broadcasting-(Vectorisation)">&#182;</a></h2><p>L'une des syntaxes les plus puissantes et courantes en Julia est le <strong>broadcasting</strong>, signalé par un point <code>.</code>. Il permet d'appliquer n'importe quelle fonction ou opérateur élément par élément sur une structure de données (comme un tableau), évitant ainsi d'écrire des boucles explicites.</p>
+
+</div>
+</div>
+</div>
+<div  class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">valeurs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">]</span>
+<span class="c"># Ajoute 10 à chaque élément (remarquez le point avant le +)</span>
+<span class="n">valeurs</span><span class="w"> </span><span class="o">.+</span><span class="w"> </span><span class="mi">10</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div  class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># Applique la fonction sinus à chaque élément</span>
+<span class="n">sin</span><span class="o">.</span><span class="p">(</span><span class="n">valeurs</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div  class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Macros-et-Performance">Macros et Performance<a class="anchor-link" href="#Macros-et-Performance">&#182;</a></h2><p>Vous rencontrerez souvent des symboles précédés d'un <code>@</code> en Julia, comme <code>@time</code> ou <code>@show</code>. Ce sont des <strong>macros</strong>, un mécanisme puissant permettant de générer du code avant l'exécution.</p>
+<p>Puisque Julia est taillé pour la performance, la macro <code>@time</code> est particulièrement utile pour évaluer le temps d'exécution et l'allocation mémoire de vos instructions.</p>
+
+</div>
+</div>
+</div>
+<div  class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># Générer un grand tableau aléatoire et chronométrer son tri</span>
+<span class="n">grand_tableau</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="o">^</span><span class="mi">6</span><span class="p">);</span>
+<span class="nd">@time</span><span class="w"> </span><span class="n">sort</span><span class="p">(</span><span class="n">grand_tableau</span><span class="p">);</span>
 </pre></div>
 
     </div>
